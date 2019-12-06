@@ -1,5 +1,5 @@
 body {
-    font-family: "Century Gothic", 'Lato', sans-serif;
+    
 }
 a {
     text-decoration: none;
@@ -73,4 +73,14 @@ a {
     .et-hero-tab {
         font-size: 1rem;
    }
+}
+
+@media screen and (max-width: 812px) {
+    .card {
+        font-size: 16px;
+
+    }
+    .et-hero-tabs, .et-slide {
+        background: blue;
+    }
 }
