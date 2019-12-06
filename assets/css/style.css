@@ -18,6 +18,7 @@ html {
     margin-bottom: 10px;
 }
 
+
 form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
@@ -62,4 +63,6 @@ textarea {
 }
 [type="submit"]:hover { background: lightgrey; }
 
-
+.card {
+    background-color: darkgrey;
+}
