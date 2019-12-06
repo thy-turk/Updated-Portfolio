@@ -67,5 +67,14 @@ textarea {
 [type="submit"]:hover { background: lightgrey; }
 
 .card {
+    background-color: lightgrey;
+}
+
+#port {
     background-color: black;
+}
+
+.page-divider {
+    background-color: black;
+    padding: 25px;
 }
