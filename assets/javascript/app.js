@@ -1,3 +1,4 @@
+// Code for the page layout
 class StickyNavigation {
 	
 	constructor() {
@@ -73,3 +74,10 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
+
+// Resets the form on submit button click
+$('#submit').on("click", function() {
+    event.preventDefault();
+    document.getElementById("contact").reset();
+}) 
+   

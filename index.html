@@ -6,52 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tucker Fiumara Portfolio</title>
 </head>
 
 <body>
-     
+
     <!-- Hero -->
-  <section class="et-hero-tabs">
-        <h1>STICKY SLIDER NAV</h1>
-        <h3>Sliding content with sticky tab nav</h3>
+    <section class="et-hero-tabs">
+        <h1>Tucker Fiumara</h1>
+        <h3>Aspiring Full Stack Web Developer</h3>
         <div class="et-hero-tabs-container">
-          <a class="et-hero-tab" href="#tab-es6">ES6</a>
-          <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-          <a class="et-hero-tab" href="#tab-react">React</a>
-          <a class="et-hero-tab" href="#tab-angular">Angular</a>
-          <a class="et-hero-tab" href="#tab-other">Other</a>
-          <span class="et-hero-tab-slider"></span>
+            <a class="et-hero-tab" href="#tab-es6">About Me</a>
+            <a class="et-hero-tab" href="#tab-flexbox">Portfolio</a>
+            <a class="et-hero-tab" href="#tab-react">Contact</a>
+            <!-- <a class="et-hero-tab" href="#tab-other">Other</a> -->
+            <span class="et-hero-tab-slider"></span>
         </div>
-      </section>
-    
-      <!-- Main -->
-      <main class="et-main">
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
         <section class="et-slide" id="tab-es6">
-          <h1>ES6</h1>
-          <h3>something about es6</h3>
+            <h1>About Me</h1>
+            <h3>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-body">
+                            Hello, my name is Tucker Fiumara and I am working towards becoming
+                            a Full Stack Web Developer. I am currently studying at the University
+                            of Denver through their six month coding bootcamp. With each passing day
+                            I am learning a great deal about what it means to be a Full Stack Web Developer
+                            and obtaining the knowledge to become one. It's very exciting looking back and
+                            seeing everything that I've learned so far and being able to implement it in
+                            progressively more impressive projects. I'm very proud of what I'm capable of now and
+                            I genuinely love learning more about coding. My hope is to enter the industry and find
+                            a place of work where I can continue to learn and become a more experienced developer.
+                            I look forward to what the future has in store for me.
+                        </div>
+
+                    </div>
+                </div>
+            </h3>
         </section>
         <section class="et-slide" id="tab-flexbox">
-          <h1>Flexbox</h1>
-          <h3>something about flexbox</h3>
+            <h1>Portfolio</h1>
+            <h3>
+                <div class="row">
+
+                    <div class="card buffer-right" style="width: 18rem;">
+                        <img src="./assets/images/hm-Screenshot.png" class="card-img-top" alt="Hangman Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Hangman Game</h5>
+                            <a href="https://thy-turk.github.io/Word-Guess-Game/" target="_blank" class="btn btn-primary btn-dark">View Page</a>
+                            <a href="https://github.com/thy-turk/Word-Guess-Game" target="_blank" class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/p1-screenshot.png" class="card-img-top" alt="Hangman Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Ski Report</h5>
+                            <a href="https://thy-turk.github.io/Project1/" target="_blank" class="btn btn-primary btn-dark">View Page</a>
+                            <a href="https://github.com/thy-turk/Project1" target="_blank" class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row buffer-top">
+
+                    <div class="card buffer-right" style="width: 18rem;">
+                        <img src="./assets/images/crystal-screenshot.png" class="card-img-top" alt="Hangman Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Crystal Collector</h5>
+                            <a href="https://thy-turk.github.io/unit-4-game/" target="_blank" class="btn btn-primary btn-dark">View Page</a>
+                            <a href="https://github.com/thy-turk/unit-4-game" target="_blank" class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/Screenshot.png" class="card-img-top" alt="Hangman Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Train Scheduler</h5>
+                            <a href="https://thy-turk.github.io/train-sched/" target="_blank" class="btn btn-primary btn-dark">View Page</a>
+                            <a href="https://github.com/thy-turk/train-sched" target="_blank" class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </h3>
         </section>
         <section class="et-slide" id="tab-react">
-          <h1>React</h1>
-          <h3>something about react</h3>
+            <h1>Contact</h1>
+            <h3><form id="contact">      
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                    <input type="submit" id="submit" value="SUBMIT"/>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                
+                </form></h3>
         </section>
-        <section class="et-slide" id="tab-angular">
-          <h1>Angular</h1>
-          <h3>something about angular</h3>
-        </section>
-        <section class="et-slide" id="tab-other">
-          <h1>Other</h1>
-          <h3>something about other</h3>
-        </section>
-      </main>
+        
+    </main>
 
 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
