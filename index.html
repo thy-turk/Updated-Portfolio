@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tabs.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cards.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tucker Fiumara Portfolio</title>
@@ -23,7 +25,9 @@
         <h1 id="land-name">Tucker Fiumara</h1>
         <h3 id="land-text">Aspiring Full Stack Web Developer</h3>
         <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#land">Home</a>
             <a class="et-hero-tab" href="#tab-es6">About Me</a>
+            <a class="et-hero-tab" href="#tab-skills">Skills</a>
             <a class="et-hero-tab" href="#tab-flexbox">Portfolio</a>
             <a class="et-hero-tab" href="#tab-react">Contact</a>
             <span class="et-hero-tab-slider"></span>
@@ -58,93 +62,315 @@
 
         <div class="page-divider"></div>
 
+        <section class="et-slide" id="tab-skills">
+            <h1>Skills</h1>
+            <h3>
+                <!-- Card that holds about me text -->
+                <div class="container">
+                    <div class="card buffer-top">
+                        <div class="card-body" id="skills-tab">
+                            <div class="tab">
+                                <button class="tablinks" onclick="openSkill(event, 'HTML')"
+                                    id="defaultOpen">HTML</button>
+                                <button class="tablinks" onclick="openSkill(event, 'CSS')">CSS</button>
+                                <button class="tablinks" onclick="openSkill(event, 'Javascript')">Javascript</button>
+                                <button class="tablinks" onclick="openSkill(event, 'Node')">Node</button>
+                                <button class="tablinks" onclick="openSkill(event, 'Express')">Express</button>
+                                <button class="tablinks" onclick="openSkill(event, 'database')">MySQL/MongoDB</button>
+                            </div>
+
+                            <!-- Tab content -->
+                            <div id="HTML" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="CSS" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="Javascript" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="Node" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="Express" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="database" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+            </h3>
+        </section>
+
+        <div class="page-divider"></div>
+
         <!-- This section holds all the cards for the portfolio -->
         <section class="et-slide" id="tab-flexbox">
             <h1>Portfolio</h1>
-            <h3>
-                <div class="row buffer-top">
 
-                    <div class="card buffer-right" id="port" style="width: 18rem;">
-                        <img src="./assets/images/hm-Screenshot.png" class="card-img-top" alt="Hangman Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Hangman Game</h5>
-                            <a href="https://thy-turk.github.io/Word-Guess-Game/" target="_blank"
-                                class="btn btn-primary btn-dark">View Page</a>
-                            <a href="https://github.com/thy-turk/Word-Guess-Game" target="_blank"
-                                class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
-                        </div>
+            <div class="cards">
+
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://images.unsplash.com/photo-1529699310859-b163e33e4556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80" alt="dice" />
                     </div>
-
-                    <div class="card buffer-right" id="port" style="width: 18rem;">
-                        <img src="./assets/images/p1-screenshot.png" class="card-img-top" alt="Hangman Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Ski Report</h5>
-                            <a href="https://thy-turk.github.io/Project1/" target="_blank"
-                                class="btn btn-primary btn-dark">View Page</a>
-                            <a href="https://github.com/thy-turk/Project1" target="_blank"
-                                class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
-                        </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Hangman Game
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
                     </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
 
-                    <div class="card" id="port" style="width: 18rem;">
-                        <img src="./assets/images/burger-screenshot.png" class="card-img-top" alt="Hangman Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Burger App</h5>
-                            <a href="https://vast-inlet-59888.herokuapp.com/" target="_blank"
-                                class="btn btn-primary btn-dark">View Page</a>
-                            <a href="https://github.com/thy-turk/Burger" target="_blank"
-                                class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://thy-turk.github.io/Word-Guess-Game/" target="_blank"
+                                    class="btn btn-primary btn-dark">View Page</a>
+                                <a href="https://github.com/thy-turk/Word-Guess-Game" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row buffer-top">
-
-                    <div class="card buffer-right" id="port" style="width: 18rem;">
-                        <img src="./assets/images/crystal-screenshot.png" class="card-img-top" alt="Hangman Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Crystal Collector</h5>
-                            <a href="https://thy-turk.github.io/unit-4-game/" target="_blank"
-                                class="btn btn-primary btn-dark">View Page</a>
-                            <a href="https://github.com/thy-turk/unit-4-game" target="_blank"
-                                class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://images.unsplash.com/photo-1453745670966-10d9449f5b12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80" alt="skiing" />
+                    </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Project 1 | Ski Report
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://thy-turk.github.io/Project1/" target="_blank"
+                                    class="btn btn-primary btn-dark">View Page</a>
+                                <a href="https://github.com/thy-turk/Project1" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card" id="port" style="width: 18rem;">
-                        <img src="./assets/images/nodeSC.png" class="card-img-top" alt="Hangman Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Liri Node App</h5>
-                            <a href="https://github.com/thy-turk/LIRI-node-app" target="_blank"
-                                class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://images.unsplash.com/photo-1559067933-0293effe6133?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1449&q=80" alt="mountain" />
+                    </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Tasty Burger App
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://vast-inlet-59888.herokuapp.com/" target="_blank"
+                                    class="btn btn-primary btn-dark">View Page</a>
+                                <a href="https://github.com/thy-turk/Burger" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row buffer-top">
-
-                    <div class="card buffer-right" id="port" style="width: 18rem;">
-                        <img src="./assets/images/ff-screenshot.png" class="card-img-top" alt="Hangman Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Finder</h5>
-                            <a href="https://shrouded-savannah-50616.herokuapp.com/" target="_blank"
-                                class="btn btn-primary btn-dark">View Page</a>
-                            <a href="https://github.com/thy-turk/Friend-Finder" target="_blank"
-                                class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
-                        </div>
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://images.unsplash.com/photo-1550007436-ba84ff7bcb54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="field" />
                     </div>
-
-                    <div class="card" id="port" style="width: 18rem;">
-                        <img src="./assets/images/nodeSC.png" class="card-img-top" alt="Hangman Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Bamazon Node MySQL app</h5>
-                            <a href="https://github.com/thy-turk/Bamazon" target="_blank"
-                                class="btn btn-primary btn-dark sm-buffer-top">GitHub</a>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Crystal Collector
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://thy-turk.github.io/unit-4-game/" target="_blank"
+                                    class="btn btn-primary btn-dark">View Page</a>
+                                <a href="https://github.com/thy-turk/unit-4-game" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-            </h3>
+
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://colorlib.com/wp/wp-content/uploads/sites/2/nodejs-frameworks.png" alt="water" />
+                    </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Liri Node App
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://github.com/thy-turk/LIRI-node-app" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1335&q=80" alt="river" />
+                    </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Project 2 | Recipe App
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://frozen-fjord-19018.herokuapp.com/" target="_blank"
+                                    class="btn btn-primary btn-dark">View Page</a>
+                                <a href="https://github.com/thy-turk/Project2" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="kite" />
+                    </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Friend Finder
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://shrouded-savannah-50616.herokuapp.com/" target="_blank"
+                                    class="btn btn-primary btn-dark">View Page</a>
+                                <a href="https://github.com/thy-turk/Friend-Finder" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://colorlib.com/wp/wp-content/uploads/sites/2/nodejs-frameworks.png"
+                            alt="underwater" />
+                    </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Bamazon Node App
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="https://github.com/thy-turk/Bamazon" target="_blank"
+                                    class="btn btn-primary btn-dark">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="port">
+                    <div class="port__image-holder">
+                        <img class="port__image" src="https://images.unsplash.com/photo-1557382830-23327b15b3bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1443&q=80" alt="desert" />
+                    </div>
+                    <div class="port-title">
+                        <a href="javascript:void();" class="toggle-info btn">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </a>
+                        <h2 class="titleofcard">
+                            Coming Soon
+                            <small>Lazy space making</small>
+                        </h2 class="titleofcard">
+                    </div>
+                    <div class="port-flap flap1">
+                        <div class="port-description">
+                        </div>
+                        <div class="port-flap flap2">
+                            <div class="port-actions">
+                                <a href="javascript:void();" class="btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
         </section>
 
         <div class="page-divider"></div>

@@ -22,6 +22,10 @@ html {
     color: white;
 }
 
+h2 {
+    color: black
+}
+
 form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
@@ -41,7 +45,7 @@ form { max-width:420px; margin:50px auto; }
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid blue; }
+.feedback-input:focus { border:2px solid black; }
 
 textarea {
   height: 150px;
@@ -77,4 +81,8 @@ textarea {
 .page-divider {
     background-color: black;
     padding: 25px;
+}
+
+small {
+    color: white;
 }
