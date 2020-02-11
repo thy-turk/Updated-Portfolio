@@ -148,9 +148,6 @@ a {
         margin-left: 45px;
     }
 
-
-
-
 }
 
 @media screen and (max-width: 750px) {
@@ -158,14 +155,14 @@ a {
         font-size: 16px;
 
     }
-
+    
     #tab-es6 {
         font-size: 0rem;
         height: 115vh;
     }
 
     #tab-flexbox {
-        height: 380vh;
+        height: 400vh;
     }
 
     #tab-react {
@@ -179,10 +176,40 @@ a {
     #port {
         margin-left: 45px;
     }
-
-
-
-
 }
+
+@media screen and (max-width: 370px) {
+    .card {
+        font-size: 16px;
+
+    }
+
+    #land {
+        height: 85vh;
+    }
+    
+    #tab-es6 {
+        font-size: 0rem;
+        height: 115vh;
+    }
+
+    #tab-flexbox {
+        height: 420vh;
+    }
+
+    #tab-react {
+        height: 115vh;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    #port {
+        margin-left: 45px;
+    }
+}
+
+
 
 /* 410 */
