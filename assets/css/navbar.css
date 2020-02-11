@@ -121,7 +121,7 @@ a {
    }
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 790px) {
     .card {
         font-size: 16px;
 
@@ -133,7 +133,39 @@ a {
     }
 
     #tab-flexbox {
-        height: 0vh;
+        height: 200vh;
+    }
+
+    #tab-react {
+        height: 115vh;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    #port {
+        margin-left: 45px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        font-size: 16px;
+
+    }
+
+    #tab-es6 {
+        font-size: 0rem;
+        height: 115vh;
+    }
+
+    #tab-flexbox {
+        height: 380vh;
     }
 
     #tab-react {
